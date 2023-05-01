@@ -1,0 +1,1395 @@
+{
+	"id": "ecf1b3de-18ec-4f9a-b3f7-58238946df44",
+	"name": "Casumo",
+	"timestamp": "2023-04-30T23:36:57.561Z",
+	"collection_id": "62405bb4-4968-4137-bd6e-63ea4ba113f3",
+	"folder_id": 0,
+	"environment_id": "204964cc-2beb-471b-82ae-75add40e4994",
+	"totalPass": 226,
+	"totalFail": 114,
+	"results": [
+		{
+			"id": "44fb4732-189f-473d-bc54-c2957d3ee769",
+			"name": "Input with mixed vowels and consonants",
+			"time": 12,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 8,
+					"fail": 2
+				}
+			},
+			"times": [
+				2515,
+				2510,
+				2516,
+				2508,
+				5,
+				2510,
+				2514,
+				2509,
+				2514,
+				12
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "8ab723d8-9407-4f89-86ae-f6635dbf0f77",
+			"name": "Input with only consonants",
+			"time": 908,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 8,
+					"fail": 2
+				}
+			},
+			"times": [
+				907,
+				911,
+				917,
+				5,
+				912,
+				911,
+				907,
+				915,
+				11,
+				908
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "117483e3-b7f2-4df3-89b0-b435b4886b37",
+			"name": "Input with only vowels",
+			"time": 2508,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 8,
+					"fail": 2
+				}
+			},
+			"times": [
+				2508,
+				2513,
+				6,
+				2506,
+				2507,
+				2511,
+				2507,
+				5,
+				2514,
+				2508
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "884be857-6263-48eb-9329-06c72b212244",
+			"name": "Input with uppercase and lowercase letters",
+			"time": 4917,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 10
+				}
+			},
+			"times": [
+				4912,
+				7,
+				4918,
+				4910,
+				4916,
+				4907,
+				21,
+				4916,
+				4909,
+				4917
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "489a81f7-0f55-4773-aa75-930b52a357ee",
+			"name": "Input hello world",
+			"time": 5030,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 10
+				}
+			},
+			"times": [
+				8,
+				5015,
+				5006,
+				5011,
+				5009,
+				6,
+				5006,
+				5007,
+				5011,
+				5030
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "4bbf134b-c22a-41f9-8ff3-89a4da34e590",
+			"name": "Input 520 characters",
+			"time": 7,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 8,
+					"fail": 2
+				}
+			},
+			"times": [
+				5008,
+				5015,
+				5015,
+				5011,
+				7,
+				5017,
+				5015,
+				5009,
+				5015,
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "d6048ca6-5e06-4e43-9f1f-c5ade3604f7b",
+			"name": "Input numbers",
+			"time": 2514,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 8,
+					"fail": 2
+				}
+			},
+			"times": [
+				2516,
+				2513,
+				2515,
+				9,
+				2515,
+				2513,
+				2511,
+				2508,
+				7,
+				2514
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "0ee15d0d-6cfa-46c6-898e-784f51192c15",
+			"name": "Input empty",
+			"time": 18,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 10,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 10
+				}
+			},
+			"times": [
+				6,
+				7,
+				7,
+				8,
+				8,
+				5,
+				8,
+				9,
+				9,
+				18
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "a8a151aa-4c13-4030-8140-d1d69c444697",
+			"name": "Input space",
+			"time": 106,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 8,
+					"fail": 2
+				}
+			},
+			"times": [
+				107,
+				110,
+				10,
+				112,
+				107,
+				108,
+				110,
+				6,
+				112,
+				106
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "57c4bf30-f641-4398-86d2-ece0a0a51b16",
+			"name": "Input with non-English characters",
+			"time": 5015,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 10
+				}
+			},
+			"times": [
+				5021,
+				8,
+				5015,
+				5016,
+				5013,
+				5015,
+				16,
+				5014,
+				5012,
+				5015
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "fffcf697-5f78-491e-9113-9529c4cb1eef",
+			"name": "Input with special characters and spaces \"+\"",
+			"time": 915,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 8,
+					"fail": 2
+				}
+			},
+			"times": [
+				9,
+				909,
+				910,
+				910,
+				907,
+				11,
+				907,
+				906,
+				905,
+				915
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "682e6b6c-fc5d-44d7-9eb7-70c5bfae7d30",
+			"name": "Input with special characters and spaces url encoding",
+			"time": 10,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 10
+				}
+			},
+			"times": [
+				908,
+				911,
+				910,
+				909,
+				7,
+				910,
+				908,
+				906,
+				908,
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "c279b6af-9991-4665-84a8-3f1ec04b4037",
+			"name": "Input with special characters encoded d e",
+			"time": 5012,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 8,
+					"fail": 2
+				}
+			},
+			"times": [
+				5013,
+				5013,
+				5011,
+				9,
+				5037,
+				5008,
+				5013,
+				5010,
+				11,
+				5012
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "983ce510-5856-452f-a72f-e36e711b9998",
+			"name": "Input with special characters and spaces - encoded space",
+			"time": 107,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 8,
+					"fail": 2
+				}
+			},
+			"times": [
+				110,
+				107,
+				6,
+				108,
+				106,
+				106,
+				109,
+				8,
+				108,
+				107
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "d983ed71-e64f-4219-99e3-060f55c312d8",
+			"name": "Input with special characters and spaces hashtag encoded",
+			"time": 5017,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 8,
+					"fail": 2
+				}
+			},
+			"times": [
+				5012,
+				11,
+				5009,
+				5015,
+				5012,
+				5011,
+				5,
+				5011,
+				5014,
+				5017
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "6d4e4af1-eb01-4c66-aed7-ae04b582c358",
+			"name": "Input with special characters and spaces",
+			"time": 5018,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 8,
+					"fail": 2
+				}
+			},
+			"times": [
+				6,
+				5013,
+				5006,
+				5011,
+				5011,
+				14,
+				5014,
+				5014,
+				5011,
+				5018
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "29a66246-767f-4ed4-8e1b-40fce1141f28",
+			"name": "Input with special characters",
+			"time": 8,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 8,
+					"fail": 2
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 10
+				}
+			},
+			"times": [
+				5008,
+				5007,
+				5005,
+				5009,
+				10,
+				5014,
+				5011,
+				5012,
+				5011,
+				8
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				},
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				}
+			]
+		}
+	],
+	"count": 10,
+	"totalTime": 404220,
+	"collection": {
+		"requests": [
+			{
+				"id": "44fb4732-189f-473d-bc54-c2957d3ee769",
+				"method": "GET"
+			},
+			{
+				"id": "8ab723d8-9407-4f89-86ae-f6635dbf0f77",
+				"method": "GET"
+			},
+			{
+				"id": "117483e3-b7f2-4df3-89b0-b435b4886b37",
+				"method": "GET"
+			},
+			{
+				"id": "884be857-6263-48eb-9329-06c72b212244",
+				"method": "GET"
+			},
+			{
+				"id": "489a81f7-0f55-4773-aa75-930b52a357ee",
+				"method": "GET"
+			},
+			{
+				"id": "4bbf134b-c22a-41f9-8ff3-89a4da34e590",
+				"method": "GET"
+			},
+			{
+				"id": "d6048ca6-5e06-4e43-9f1f-c5ade3604f7b",
+				"method": "GET"
+			},
+			{
+				"id": "0ee15d0d-6cfa-46c6-898e-784f51192c15",
+				"method": "GET"
+			},
+			{
+				"id": "a8a151aa-4c13-4030-8140-d1d69c444697",
+				"method": "GET"
+			},
+			{
+				"id": "57c4bf30-f641-4398-86d2-ece0a0a51b16",
+				"method": "GET"
+			},
+			{
+				"id": "fffcf697-5f78-491e-9113-9529c4cb1eef",
+				"method": "GET"
+			},
+			{
+				"id": "682e6b6c-fc5d-44d7-9eb7-70c5bfae7d30",
+				"method": "GET"
+			},
+			{
+				"id": "c279b6af-9991-4665-84a8-3f1ec04b4037",
+				"method": "GET"
+			},
+			{
+				"id": "983ce510-5856-452f-a72f-e36e711b9998",
+				"method": "GET"
+			},
+			{
+				"id": "d983ed71-e64f-4219-99e3-060f55c312d8",
+				"method": "GET"
+			},
+			{
+				"id": "6d4e4af1-eb01-4c66-aed7-ae04b582c358",
+				"method": "GET"
+			},
+			{
+				"id": "29a66246-767f-4ed4-8e1b-40fce1141f28",
+				"method": "GET"
+			}
+		]
+	}
+}

@@ -1,0 +1,647 @@
+{
+	"id": "7f349d65-380c-4e7d-813a-c8af459aaa3b",
+	"name": "Casumo",
+	"timestamp": "2023-04-30T23:34:38.309Z",
+	"collection_id": "62405bb4-4968-4137-bd6e-63ea4ba113f3",
+	"folder_id": 0,
+	"environment_id": "204964cc-2beb-471b-82ae-75add40e4994",
+	"totalPass": 22,
+	"totalFail": 12,
+	"results": [
+		{
+			"id": "44fb4732-189f-473d-bc54-c2957d3ee769",
+			"name": "Input with mixed vowels and consonants",
+			"url": "http://localhost:8080/input",
+			"time": 2534,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2534
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "8ab723d8-9407-4f89-86ae-f6635dbf0f77",
+			"name": "Input with only consonants",
+			"url": "http://localhost:8080/xyz",
+			"time": 7,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "117483e3-b7f2-4df3-89b0-b435b4886b37",
+			"name": "Input with only vowels",
+			"url": "http://localhost:8080/aeiou",
+			"time": 2515,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2515
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "884be857-6263-48eb-9329-06c72b212244",
+			"name": "Input with uppercase and lowercase letters",
+			"url": "http://localhost:8080/PostmAn",
+			"time": 4914,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4914
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "489a81f7-0f55-4773-aa75-930b52a357ee",
+			"name": "Input hello world",
+			"url": "http://localhost:8080/HeLLo%20WoRLd%20hEllO%20wOrld",
+			"time": 5016,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5016
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "4bbf134b-c22a-41f9-8ff3-89a4da34e590",
+			"name": "Input 520 characters",
+			"url": "http://localhost:8080/abcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyz",
+			"time": 5015,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5015
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "d6048ca6-5e06-4e43-9f1f-c5ade3604f7b",
+			"name": "Input numbers",
+			"url": "http://localhost:8080/12345",
+			"time": 11,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "0ee15d0d-6cfa-46c6-898e-784f51192c15",
+			"name": "Input empty",
+			"url": "http://localhost:8080/",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "a8a151aa-4c13-4030-8140-d1d69c444697",
+			"name": "Input space",
+			"url": "http://localhost:8080/%20",
+			"time": 109,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				109
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "57c4bf30-f641-4398-86d2-ece0a0a51b16",
+			"name": "Input with non-English characters",
+			"url": "http://localhost:8080/%D0%BB%D0%B8%D1%88%D1%9B%D0%B5,%20li%C5%A1%C4%87e",
+			"time": 5017,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5017
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "fffcf697-5f78-491e-9113-9529c4cb1eef",
+			"name": "Input with special characters and spaces \"+\"",
+			"url": "http://localhost:8080/a+b",
+			"time": 908,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				908
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "682e6b6c-fc5d-44d7-9eb7-70c5bfae7d30",
+			"name": "Input with special characters and spaces url encoding",
+			"url": "http://localhost:8080/%D1%87%D0%B0%D1%98",
+			"time": 911,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				911
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "c279b6af-9991-4665-84a8-3f1ec04b4037",
+			"name": "Input with special characters encoded d e",
+			"url": "http://localhost:8080/Innppoot%64m%65m",
+			"time": 7,
+			"responseCode": {
+				"code": 500,
+				"name": "Internal Server Error"
+			},
+			"tests": {
+				"Status code is 200": false,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 200": false,
+					"Body is correct": false
+				}
+			]
+		},
+		{
+			"id": "983ce510-5856-452f-a72f-e36e711b9998",
+			"name": "Input with special characters and spaces - encoded space",
+			"url": "http://localhost:8080/%20",
+			"time": 107,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				107
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "d983ed71-e64f-4219-99e3-060f55c312d8",
+			"name": "Input with special characters and spaces hashtag encoded",
+			"url": "http://localhost:8080/%23hashtag",
+			"time": 5014,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5014
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "6d4e4af1-eb01-4c66-aed7-ae04b582c358",
+			"name": "Input with special characters and spaces",
+			"url": "http://localhost:8080/input=c%2B%2B%20programming",
+			"time": 5012,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5012
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": true
+				}
+			]
+		},
+		{
+			"id": "29a66246-767f-4ed4-8e1b-40fce1141f28",
+			"name": "Input with special characters",
+			"url": "http://localhost:8080/%21%40%23%24%25%5E%26%2A%28%29_%2B-%3D%5B%5D%7B%7D%7C%3B%27%3A%22%2C.%2F%3C%3E%3F%0A",
+			"time": 5010,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body is correct": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5010
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body is correct": false
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 42117,
+	"collection": {
+		"requests": [
+			{
+				"id": "44fb4732-189f-473d-bc54-c2957d3ee769",
+				"method": "GET"
+			},
+			{
+				"id": "8ab723d8-9407-4f89-86ae-f6635dbf0f77",
+				"method": "GET"
+			},
+			{
+				"id": "117483e3-b7f2-4df3-89b0-b435b4886b37",
+				"method": "GET"
+			},
+			{
+				"id": "884be857-6263-48eb-9329-06c72b212244",
+				"method": "GET"
+			},
+			{
+				"id": "489a81f7-0f55-4773-aa75-930b52a357ee",
+				"method": "GET"
+			},
+			{
+				"id": "4bbf134b-c22a-41f9-8ff3-89a4da34e590",
+				"method": "GET"
+			},
+			{
+				"id": "d6048ca6-5e06-4e43-9f1f-c5ade3604f7b",
+				"method": "GET"
+			},
+			{
+				"id": "0ee15d0d-6cfa-46c6-898e-784f51192c15",
+				"method": "GET"
+			},
+			{
+				"id": "a8a151aa-4c13-4030-8140-d1d69c444697",
+				"method": "GET"
+			},
+			{
+				"id": "57c4bf30-f641-4398-86d2-ece0a0a51b16",
+				"method": "GET"
+			},
+			{
+				"id": "fffcf697-5f78-491e-9113-9529c4cb1eef",
+				"method": "GET"
+			},
+			{
+				"id": "682e6b6c-fc5d-44d7-9eb7-70c5bfae7d30",
+				"method": "GET"
+			},
+			{
+				"id": "c279b6af-9991-4665-84a8-3f1ec04b4037",
+				"method": "GET"
+			},
+			{
+				"id": "983ce510-5856-452f-a72f-e36e711b9998",
+				"method": "GET"
+			},
+			{
+				"id": "d983ed71-e64f-4219-99e3-060f55c312d8",
+				"method": "GET"
+			},
+			{
+				"id": "6d4e4af1-eb01-4c66-aed7-ae04b582c358",
+				"method": "GET"
+			},
+			{
+				"id": "29a66246-767f-4ed4-8e1b-40fce1141f28",
+				"method": "GET"
+			}
+		]
+	}
+}

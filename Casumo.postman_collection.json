@@ -1,0 +1,582 @@
+{
+	"info": {
+		"_postman_id": "62405bb4-4968-4137-bd6e-63ea4ba113f3",
+		"name": "Casumo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Input with mixed vowels and consonants",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"npt\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/input",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"input"
+					]
+				},
+				"description": "Input parameter: input\r\nExpected result: npt"
+			},
+			"response": []
+		},
+		{
+			"name": "Input with only consonants",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"xyz\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/xyz",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"xyz"
+					]
+				},
+				"description": "Input parameter: xyz\r\nExpected result: xyz"
+			},
+			"response": []
+		},
+		{
+			"name": "Input with only vowels",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/aeiou",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"aeiou"
+					]
+				},
+				"description": "Input parameter: aeiou\r\nExpected result: \"\""
+			},
+			"response": []
+		},
+		{
+			"name": "Input with uppercase and lowercase letters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"Pstmn\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/PostmAn",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"PostmAn"
+					]
+				},
+				"description": "Input parameter: PostmAn\r\nExpected result: Pstmn"
+			},
+			"response": []
+		},
+		{
+			"name": "Input hello world",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"HLL WRLd hllO wrld\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/HeLLo WoRLd hEllO wOrld",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"HeLLo WoRLd hEllO wOrld"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Input 520 characters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"bcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyz\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/abcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyz",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"abcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyz"
+					]
+				},
+				"description": "Input parameter: abcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyzabcdefghijklmnopqrstyvwxyz\r\nExpected result: bcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyzbcdfghjklmnpqrstyvwxyz"
+			},
+			"response": []
+		},
+		{
+			"name": "Input numbers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"12345\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/12345",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"12345"
+					]
+				},
+				"description": "Input parameter: \"12345\"\r\nExpected result: \"12345\""
+			},
+			"response": []
+		},
+		{
+			"name": "Input empty",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						""
+					]
+				},
+				"description": "Input parameter: \"\"\r\nExpected result: \"\""
+			},
+			"response": []
+		},
+		{
+			"name": "Input space",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\" \");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/ ",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						" "
+					]
+				},
+				"description": "Input parameter: \" \"\r\nExpected result: \" \""
+			},
+			"response": []
+		},
+		{
+			"name": "Input with non-English characters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"лшћ, lšć\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/лишће, lišće",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"лишће, lišće"
+					]
+				},
+				"description": "Input parameter: лишће, lišće\r\nExpected result: лшћ, lšć"
+			},
+			"response": []
+		},
+		{
+			"name": "Input with special characters and spaces \"+\"",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"+b\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/a+b",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"a+b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Input with special characters and spaces url encoding",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"чј\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/%D1%87%D0%B0%D1%98",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"%D1%87%D0%B0%D1%98"
+					]
+				},
+				"description": "Input parameter: @#$%^ Hello, World!\r\nExpected result: @#$%^ Hll, Wrld!"
+			},
+			"response": []
+		},
+		{
+			"name": "Input with special characters encoded d e",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"Innpptdmm\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/Innppoot%64m%65m",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"Innppoot%64m%65m"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Input with special characters and spaces - encoded space",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\" \");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/%20",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"%20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Input with special characters and spaces hashtag encoded",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"#hshtg\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/%23hashtag",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"%23hashtag"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Input with special characters and spaces",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"npt=c++ prgrmmng\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/input=c%2B%2B%20programming",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"input=c%2B%2B%20programming"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Input with special characters",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Body is correct\", function () {\r",
+							"    pm.response.to.have.body(\"!@#\\\\$%^&*()_+-=\\\\[\\\\]{}\\\\|;':\\\",./<>?\");\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/%21%40%23%24%25%5E%26%2A%28%29_%2B-%3D%5B%5D%7B%7D%7C%3B%27%3A%22%2C.%2F%3C%3E%3F\n",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"%21%40%23%24%25%5E%26%2A%28%29_%2B-%3D%5B%5D%7B%7D%7C%3B%27%3A%22%2C.%2F%3C%3E%3F\n"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
